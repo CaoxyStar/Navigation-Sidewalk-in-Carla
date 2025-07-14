@@ -1,0 +1,13 @@
+General:
+  resolution: 0.1
+
+Town03:
+  map_name: "Town03"
+  x_range: [-165, 255]
+  y_range: [-225, 225]
+  erode_kernel_size: 5
+  erode_iterations: 3
+  dilate_kernel_size: 5
+  dilate_iterations: 3
+  close_kernel_size: 5
+  close_iterations: 5

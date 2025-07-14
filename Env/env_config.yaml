@@ -1,0 +1,47 @@
+env:
+  map_name: "Town03"
+  step_time: 0.1
+  rendering: True
+  mode: 'train'  # 'train', 'val', or 'test'
+
+train:
+
+val:
+
+test:
+
+robot:
+  cameras:
+    rgb: True  # RGB camera must be True
+    depth: True
+    semantic: True
+  sensors:
+    collision: True
+    lidar: False
+    gnss: False
+    imu: False
+  actions:
+    move_forward: 0.15  # 0.15 meters per step
+    turn_left: -4.5     # -4.5 degrees per step
+    turn_right: 4.5     # 4.5 degrees per step
+
+camera_cfg:
+  rgb:
+    image_size_x: 224
+    image_size_y: 224
+  depth:
+    image_size_x: 224
+    image_size_y: 224
+  semantic:
+    image_size_x: 224
+    image_size_y: 224
+
+sensor_cfg:
+  collision:
+    height_offset: -1.0
+    distance: 0.3
+    hit_radius: 0.3
+  gnss:
+    noise_stddev: 0.1
+  imu:
+    noise_stddev: 0.01
